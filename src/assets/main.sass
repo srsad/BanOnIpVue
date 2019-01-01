@@ -1,0 +1,127 @@
+.row
+	display: flex
+	flex-wrap: row
+
+.col-6
+	flex: 0 0 50%
+	max-width: 50%
+	
+.text-right
+	text-align: right
+
+.text-left
+	text-align: left
+
+.text-center
+	text-align: center
+
+.form-input
+	background: #fff
+	margin: 0 !important
+	font-size: 12px !important
+	padding: 11px 13px
+	border-radius: 3px
+	position: relative
+	border: 1px
+	transition: border-color 0.25s
+
+.window
+	& .window__header
+		position: relative
+		cursor: all-scroll
+		background-color: #F0F0F0
+		border-bottom: 1px solid #DCDCDC
+		border-radius: 3px 3px 0 0
+		color: #555555
+		font: normal 13px "Helvetica Neue", Helvetica, Arial, Tahoma, sans-serif
+		font-weight: bold
+		padding: 8px
+		text-align: center
+		& .window__btns
+			position: absolute
+			top: 5px
+			right: 2px
+	& .window__content
+		padding: 15px
+	& .window__footer
+		text-align: right
+		background-color: #F0F0F0
+		border-top: 1px solid #DCDCDC
+		border-radius: 0 0 3px 3px
+		box-sizing: border-box
+		padding: 5px
+		width: 100% !important
+
+.x-form-item, 
+	margin-bottom: 5px
+	width: calc(100% - 7px)
+	& .x-form-text, .x-form-textarea
+		margin-bottom: 5px
+		width: calc(100% - 7px)
+		transition: all .2s
+		&:focus
+			border-color: #2d86b7
+
+.d-inline-block
+	display: inline-block
+	
+.x-form-cb-label
+	color: #555555
+	font-size: 13px
+	font-weight: bold
+	position: relative
+
+label
+	cursor: pointer
+	&:hover .x-checkbox-custom
+		border-color: #3697cd
+		box-shadow: inset 0 0 1px 0px #3697cd
+
+.x-checkbox-custom
+	position: relative
+	width: 13px
+	height: 13px
+	border: 1px solid #555
+	border-radius: 3px
+	margin-right: 7px
+	box-shadow: inset 0 0 1px 0px
+	&.disabled
+		border-color: #989898
+		background-color: #fafafa
+	&:hover, &focus 
+		border-color: #3697cd
+		box-shadow: inset 0 0 1px 0px #3697cd
+
+.x-checkbox
+	display: none
+
+.x-checkbox:checked + .x-checkbox-custom::before
+	content: ''
+	display: block
+	position: absolute
+	top: -4px
+	right: 0px
+	width: 6px
+	height: 10px
+	border-right: 3px solid #555
+	border-bottom: 3px solid #555
+	box-shadow: 1px -1px 0px 0px #f7f7f7
+	transform: rotate(35deg)
+
+.x-form-cb-label
+	&.disabled
+		color: #989898
+
+.x-form-invalid-msg
+	display: block
+	width: 100%
+
+.x-checkbox-custom,.label
+	display: inline-block
+	vertical-align: middle
+
+.table
+	tbody
+		tr:nth-of-type(even)
+			background-color: rgba(0,0,0,.05)
+
