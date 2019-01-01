@@ -15,7 +15,7 @@ class BanOnIPHomeManagerController extends modExtraManagerController
      */
     public function initialize()
     {
-        $this->BanOnIP = $this->modx->getService('BanOnIP', 'BanOnIP', MODX_CORE_PATH . 'components/banonip/model/');
+        $this->BanOnIP = $this->modx->getService('BanOnIP', 'BanOnIP', MODX_BASE_PATH . 'BanOnIP/core/components/banonip/model/');
         #$this->BanOnIP = $this->modx->getService('BanOnIP', 'BanOnIP', MODX_CORE_PATH . 'components/banonip/model/');
         parent::initialize();
     }
